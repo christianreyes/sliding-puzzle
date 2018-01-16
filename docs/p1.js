@@ -240,11 +240,11 @@ function shuffleTiles(numLeft) {
         }
 
         var t = getTile(selectedTile.row, selectedTile.col);
-        t.slide(5);
+        t.slide(50);
         _just_moved = t;
         
         // keep shuffling
-        setTimeout(function () { shuffleTiles(numLeft - 1) }, 50);
+        setTimeout(function () { shuffleTiles(numLeft - 1) }, 250);
     } else {
         // when the shuffling is done, set puzzle so tiles can be clicked
         _able_to_click = true;
