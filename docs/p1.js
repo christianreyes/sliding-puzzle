@@ -265,9 +265,9 @@ window.onload = function () {
     _image_width = imageProperties[1];
     _image_height = imageProperties[2];
 
-    // randomly pick the puzzle dimensions >= 2 and <= 4
-    _num_rows = Math.floor((Math.random() * 3)) + 2;
-    _num_cols = Math.floor((Math.random() * 3)) + 2;
+    // randomly pick the puzzle dimensions >= 12 and <= 14
+    _num_rows = Math.floor((Math.random() * 3)) + 10;
+    _num_cols = Math.floor((Math.random() * 3)) + 10;
 
     // setup frame and container
     _frame.style.width = _image_width + colGap(_num_cols) + "px";
